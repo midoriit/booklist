@@ -24,12 +24,22 @@
           function() {
             tr = '<table border>';
             Object.keys(feature.properties).forEach( function(k){
-              tr = tr + 
+              if( k == 'ID' ) {
+                tr = tr + 
+                   '<tr><td style="white-space: nowrap;">' + 
+                   k + 
+                   '</td><td style="white-space: nowrap;">' +
+                   '<a href="' + feature.properties[k] + '" target="_blank">' +
+                   feature.properties[k] + '</a>' +
+                   '</td></tr>';
+              } else {
+                tr = tr + 
                    '<tr><td style="white-space: nowrap;">' + 
                    k + 
                    '</td><td style="white-space: nowrap;">' +
                    feature.properties[k] + 
                    '</td></tr>';
+              }
             });
             return tr + '</table>';
           }

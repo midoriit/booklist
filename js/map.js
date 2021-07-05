@@ -11,6 +11,11 @@
 
   layer.addTo(map);
 
+  var markerclusters = new L.markerClusterGroup({
+    showCoverageOnHover: false,
+    maxClusterRadius: 40
+  }).addTo(map);
+
   $.getJSON( 'poi.geojson', function(data) {
     var poiLayer = L.geoJson(data, {
       pointToLayer: function (feature, latlng) {
@@ -30,8 +35,9 @@
           }
         );
       }
-    }).addTo(map);
+    });
 
+    markerclusters.addLayer(poiLayer);
     map.fitBounds(poiLayer.getBounds());
   });
 

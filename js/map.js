@@ -26,7 +26,7 @@
             Object.keys(feature.properties).forEach( function(k){
               if( k == 'ID' ) {
                 tr = tr + 
-                   '<tr><td style="white-space: nowrap;">' + 
+                   '<tr><td>' + 
                    k + 
                    '</td><td style="white-space: nowrap;">' +
                    '<a href="' + feature.properties[k] + '" target="_blank">' +
@@ -36,7 +36,7 @@
                 tr = tr + 
                    '<tr><td style="white-space: nowrap;">' + 
                    k + 
-                   '</td><td style="white-space: nowrap;">' +
+                   '</td><td>' +
                    feature.properties[k] + 
                    '</td></tr>';
               }

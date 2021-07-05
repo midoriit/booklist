@@ -1,12 +1,12 @@
-# SimplePoiMap
-GeoJSONファイルのPOIを表示する簡単なマップ
+# 地域の石造物資料目録
+国立国会図書館サーチのAPIを使用して収集した、県や市町村など特定地域の石造物についての書籍（1945年以降の発行）のリストをマップにしました。
 
-GitHub Pagesによる表示は [こちら](https://midoriit.github.io/SimplePoiMap/)
+## OSSライセンス
 
-## 使用法
-
-1. このリポジトリをForkする
-2. index.htmlファイルを適宜書き換える
-3. poi.geojsonを表示したいPOIのデータで置き換える
-4. GitHub Pagesを設定して公開する
-
+* [Leaflet](https://leafletjs.com/) (2-Clause BSD)
+* [Leaflet.EasyButton](https://github.com/CliffCloud/Leaflet.EasyButton) (MIT license)
+* [Bootstrap](https://getbootstrap.com/) (MIT license)
+* [jQuery](https://jquery.com/) (MIT license)
+* [Font Awesome](https://fortawesome.github.io/Font-Awesome/) (SIL OFL 1.1)
+* [Leaflet.markercluster](https://github.com/Leaflet/Leaflet.markercluster) (MIT license)
+* [SimplePoiMap](https://github.com/midoriit/SimplePoiMap) (MIT license)

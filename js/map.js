@@ -1,6 +1,6 @@
 ﻿$(function(){
   var map = L.map('mapdiv', {
-    minZoom: 6,
+    minZoom: 5,
     maxZoom: 18,
   });
   var layer = L.tileLayer(
@@ -48,7 +48,7 @@
     });
 
     markerclusters.addLayer(poiLayer);
-    map.fitBounds(markerclusters.getBounds());
+    map.fitBounds(poiLayer.getBounds());
   });
 
   L.easyButton('fa fa-info fa-lg',

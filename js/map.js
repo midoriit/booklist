@@ -48,7 +48,7 @@
     });
 
     markerclusters.addLayer(poiLayer);
-    map.fitBounds(poiLayer.getBounds());
+    map.fitBounds(markerclusters.getBounds());
   });
 
   L.easyButton('fa fa-info fa-lg',

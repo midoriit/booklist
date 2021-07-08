@@ -4,6 +4,8 @@
 
 GitHub Pagesによる表示は [こちら](https://midoriit.github.io/booklist/)
 
+データはLinkData.orgの[地域の石造物資料目録](http://linkdata.org/work/rdf1s8576i)でCC-BYライセンスで公開しています。 
+
 ## OSSライセンス
 
 * [Leaflet](https://leafletjs.com/) (2-Clause BSD)
